@@ -19,16 +19,24 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/FronEnd/photos/logo2.png" alt="Logo" width="200" height="100">
+                <img src="photos/1.png" alt="Logo" width="100" height="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="http://192.168.100.3/moodlemekteb-manager/?redirect=0"><i class="fas fa-school me-2"></i>Məktəb</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#muellim"><i class="fas fa-user-tie me-2"></i>Müəllim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#mektebli"><i class="fas fa-user-graduate me-2"></i>Məktəbli</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="schoolDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-school me-2"></i>Məktəb
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="schoolDropdown">
+                            <li><a class="dropdown-item" href="https://e-szrti.sim.edu.az" target="_blank">ŞZRTİ</a></li>
+                            <li><a class="dropdown-item" href="https://e-larti.sim.edu.az" target="_blank">LARTİ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://teacher.sim.edu.az"><i class="fas fa-user-tie me-2"></i>Müəllim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://student.sim.edu.az"><i class="fas fa-user-graduate me-2"></i>Məktəbli</a></li>
                     <li class="nav-item"><a class="nav-link" href="#elaqe"><i class="fas fa-phone me-2"></i>Əlaqə</a></li>
                 </ul>
             </div>
@@ -38,8 +46,8 @@
     <header class="hero-section" id="hero">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-md-6 text-center">
-                    <img src="/FronEnd/photos/Designer.jpeg" alt="Hero Image" class="img-fluid">
+                <div class="col-md-6 text-center col-lg-4 mt-5">
+                    <img src="photos/Designer.jpeg" alt="Hero Image" class="img-fluid" loading="lazy">
                 </div>
                 <div class="col-md-6 text-center">
                     <h1 class="fw-bold">SİM platformasına Xoş Gəlmisiniz</h1>
@@ -56,40 +64,41 @@
                 <!-- Məktəb Bölməsi -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <img src="/FronEnd/photos/school.jpg" class="card-img-top" alt="Məktəb">
+                        <img src="photos/school_ai.jpg" class="card-img-top" alt="Məktəb">
                         <div class="card-body">
                             <h2 class="card-title">Məktəb</h2>
-                            <p class="card-text">Azərbaycanın məktəbləri haqqında məlumat və resurslar. Məktəblər uçun faydalı məlumatlar.</p>
-                            <a href="#" class="btn btn-primary">Daxil Ol</a>
+                            <p class="card-text">Platformada olan məktəblər, müəllimlər və şagirdlər haqqında statistik məlumat və resurslar.</p>
+                            <a href="school.html" class="btn btn-primary">Daxil Ol</a>
                         </div>
                     </div>
                 </div>
                 <!-- Müəllim Bölməsi -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <img src="/FronEnd/photos/teacher.jpeg" class="card-img-top" alt="Müəllim">
+                        <img src="photos/teachers.jpeg" class="card-img-top" alt="Müəllim">
                         <div class="card-body">
                             <h2 class="card-title">Müəllim</h2>
                             <p class="card-text">Müəllimlər üçün faydalı məlumatlar və professional inkişaf imkanları.</p>
-                            <a href="#" class="btn btn-primary">Daxil Ol</a>
+                            <a href="https://teacher.sim.edu.az" class="btn btn-primary">Daxil Ol</a>
                         </div>
                     </div>
                 </div>
                 <!-- Məktəbli Bölməsi -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <img src="/FronEnd/photos/11.jpg" class="card-img-top" alt="Məktəbli">
+                        <img src="photos/students.jpeg" class="card-img-top" alt="Məktəbli">
                         <div class="card-body">
                             <h2 class="card-title">Məktəbli</h2>
                             <p class="card-text">Şagirdlər üçün öyrənmə resursları və faydalı məlumatlar.</p>
-                            <a href="#" class="btn btn-primary">Daxil Ol</a>
+                            <a href="https://student.sim.edu.az" class="btn btn-primary">Daxil Ol</a>
                         </div>
                     </div>
                 </div>
                 <!-- Suggestion -->
+                <hr style="border-top: 3px solid rgba(0,0,0,0.1); margin: 1rem 0;">
                 <div class="col-md-12 text-center">
                     <p class="lead">Məktəbli, Müəllim və Məktəb bölmələrinin yeniləşdirilməsi üçün dəstək və tövsiyələrinizə ehtiyacımız var. Zəhmət olmasa, aşağıdakı formasını dolduraraq bizə tövsiyələrinizi çatdırın.</p>
-                    <a href="#" class="btn btn-primary">Dəstək və tövsiyələr</a>
+                    <a href="https://forms.office.com/r/r0PLHNiKWC" class="btn btn-primary">Dəstək və tövsiyələr</a>
                 </div>
             </div>
         </div>
@@ -100,6 +109,25 @@
         <div class="container">
             <h2 class="text-center mb-4">Vacib Xəbərlər və Elanlar</h2>
             <div class="row">
+            	<div class="col-12 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold; color: #FF0000;">Müavinlər üçün qeydiyyat formu</h5>
+                            <p class="card-text">Şəki-Zaqatala RTİ-nin tabeliyində fəaliyyət göstərən ümumi təhsil məktəblərində direktor müavini,
+                            məktəbdənkənar və sinifdənxaric tərbiyə işi üzrə təşkilatçı vakansiyaları üçün namizədlərin qeydiyyatı forması</p>
+                            <a href="https://forms.office.com/r/LEfYNhhPg9" class="btn btn-primary">Qeydiyyat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Müəllimlərin İxtisasartırma Kursu</h5>
+                            <p class="card-text">Növbəti ay ərzində müəllimlər üçün yeni ixtisasartırma kursları keçiriləcək.</p>
+                            <a href="#" class="btn btn-primary">Ətraflı</a>
+                        </div>
+                    </div>
+                </div>
                 <!-- Xəbər/Elan kartları burada olacaq -->
                 <!-- JavaScript ilə dinamik olaraq doldurulacaq -->
             </div>
@@ -109,32 +137,60 @@
     <!-- Haqqımızda -->
     <section id="haqqimizda" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Haqqımızda</h2>
+            <h2 class="text-center mb-4">SİM haqqında</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <p>Azərbaycan Müəllimləri Portalı, ölkəmizin təhsil sistemini gücləndirmək və müəllimlərimizin professional inkişafına dəstək olmaq məqsədi ilə yaradılmışdır.</p>
-                    <p>Portalda ən yaxsı məlumatlara sahib olacaq, ən yaxsı xəbərlərə sahib olacaq və ən yaxsı elanlarına sahib olacaq. Müəllimlərimiz dəstəkləmək və onlara ən yaxış resursları təqdim etmək. Azərbaycanın gələcəyini formalaşdıran başlıq</p>
+                    <h3>Biz Kimik?</h3>
+                    <div class="section">
+                    </div>
+                    <p>SİM, Azərbaycanın təhsil sahəsində inqilabi dəyişiklik yaratmaq məqsədi ilə yaradılmış innovativ online platformadır. Təcrübəli pedaqoqlar, texnologiya mütəxəssisləri və təhsil innovatorlarından ibarət komandamızla birlikdə, ölkəmizin təhsil sistemini müasir dövrün tələblərinə uyğunlaşdırmaq və gələcəyin liderləri, müəllimləri və mütəxəssislərini yetişdirmək üçün yorulmadan çalışırıq.</p>
+    
+                    <h3>Nə Təklif Edirik?</h3>
+                    <div class="section">
+                        <ol>
+                            <li><strong>Sənin İnkişaf Məktəbin:</strong> Şagirdlər və məktəblər üçün fərdiləşdirilmiş təhsil yolu və detallı analitika.</li>
+                            <p>SİM platforması üç əsas istiqamətdə xidmət göstərir:</p>
+                            <li><strong>Sabahın İntellektual Məktəblisi:</strong> Şagirdlər üçün innovativ kurslar və gələcəyin bacarıqlarını inkişaf etdirən proqramlar.</li>
+                            <li><strong>Səriştəli İdarəçi Müəllim:</strong> Müəllimlər və təhsil idarəçiləri üçün peşəkar inkişaf proqramları və resurslar.</li>
+                        </div>
+                    </ol>
+    
+                    <h3>Niyə SİM?</h3>
+                    <div class="section">
+                        <li>Fərdiləşdirilmiş öyrənmə təcrübəsi</li>
+                        <ul>
+                            <li>Ən son texnologiyalardan istifadə</li>
+                            <li>Data-əsaslı qərar qəbuletmə imkanı</li>
+                            <li>Daim yenilənən və genişlənən kurs kataloqu</li>
+                            <li>Milli və beynəlxalq ekspertlərlə əməkdaşlıq</li>
+                        </ul>
+                    <li>İstənilən yerdən və istənilən vaxt əlçatan təhsil</li>
+                    
                 </div>
+                <h3>Gələcək Vizyonumuz</h3>
+                <div class="section">
+                    
+                    <p>SİM olaraq, Azərbaycanı regional təhsil innovasiyaları mərkəzinə çevirmək və qlobal təhsil arenasında öz sözümüzü demək istəyirik. İnanırıq ki, texnologiya və təhsilin güclü sintezi ilə ölkəmizin insan kapitalını gücləndirə və daha parlaq bir gələcək qura bilərik.</p>
+        </div>
+    
+            <p>Bizimlə öyrənməyə, inkişaf etməyə və gələcəyi formalaşdırmağa hazırsınızmı? SİM-ə qoşulun və təhsil səyahətinizi yeni səviyyəyə qaldırın!</p>
+            <p><strong>Təhsil gələcəkdir. Gələcək isə SİM-də başlayır!</strong></p>
+        </div>
                 <div class="col-md-6">
-                    <h3>Missiyamız</h3>
-                    <p>Azərbaycanın gələcəyini formalaşdıran müəllimlərimizi dəstəkləmək və onlara ən yaxşı resursları təqdim etmək.</p>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4 text-center">
-                    <i class="fas fa-school fa-3x mb-3"></i>
-                    <h4>600+</h4>
-                    <p>Xidmət göstərilən məktəb</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="fas fa-chalkboard-teacher fa-3x mb-3"></i>
-                    <h4>2,000+</h4>
-                    <p>Qeydiyyatdan keçmiş müəllim</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="fas fa-book-reader fa-3x mb-3"></i>
-                    <h4>1,000+</h4>
-                    <p>Faydalanan şagird</p>
+                    <h3>SİM - Missiyamız</h3>
+    <p>SİM (Səriştəli İnkişaf Mərkəzi) olaraq missiyamız, Azərbaycanın təhsil ekosistemini rəqəmsallaşdırmaq, modernləşdirmək və gücləndirməkdir. Biz buna aşağıdakı yollarla nail olmağa çalışırıq:</p>
+    
+    <div class="mission-item">1. Təhsildə fərdiləşdirilmiş yanaşmanı təşviq etmək</div>
+    <div class="mission-item">2. Müəllimlərin peşəkar inkişafını davamlı dəstəkləmək</div>
+    <div class="mission-item">3. Şagirdləri gələcəyin bacarıqları ilə təchiz etmək</div>
+    <div class="mission-item">4. Data-əsaslı qərar qəbuletmə prosesini təhsil sisteminə inteqrasiya etmək</div>
+    <div class="mission-item">5. Ömürboyu öyrənmə mədəniyyətini yaymaq</div>
+    <div class="mission-item">6. Təhsildə bərabər imkanlar yaratmaq və keyfiyyətli təhsilə çıxışı asanlaşdırmaq</div>
+    <div class="mission-item">7. Milli təhsil sistemini qlobal standartlara uyğunlaşdırmaq</div>
+    <div class="mission-item">8. İnnovativ pedaqoji yanaşmaları təşviq etmək və tətbiq etmək</div>
+    <div class="mission-item">9. Təhsil icması arasında əməkdaşlıq və bilik mübadiləsini gücləndirmək</div>
+
+    <p>SİM ilə birlikdə Azərbaycanın təhsil gələcəyini formalaşdırırıq!</p>
                 </div>
             </div>
         </div>
@@ -223,3 +279,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
