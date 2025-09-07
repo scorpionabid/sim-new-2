@@ -112,12 +112,12 @@
             <div class="row">
                 <!-- Məktəb Bölməsi -->
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 position-relative">
                         <img src="photos/school.jpg" class="card-img-top" alt="Məktəb">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h2 class="card-title font-heading">Məktəb</h2>
-                            <p class="card-text">Platformada olan məktəblər, müəllimlər və şagirdlər haqqında statistik məlumat və resurslar.</p>
-                            <a href="school.html" class="btn btn-primary">
+                            <p class="card-text flex-grow-1">Platformada olan məktəblər, müəllimlər və şagirdlər haqqında statistik məlumat və resurslar.</p>
+                            <a href="school.html" class="btn btn-primary align-self-end">
                                 <i class="fas fa-arrow-right me-2"></i>Daxil Ol
                             </a>
                         </div>
@@ -125,12 +125,12 @@
                 </div>
                 <!-- Müəllim Bölməsi -->
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 position-relative">
                         <img src="photos/teacher.jpeg" class="card-img-top" alt="Müəllim">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h2 class="card-title font-heading">Müəllim</h2>
-                            <p class="card-text">Müəllimlər üçün faydalı məlumatlar və professional inkişaf imkanları.</p>
-                            <a href="https://teacher.sim.edu.az" class="btn btn-primary">
+                            <p class="card-text flex-grow-1">Müəllimlər üçün faydalı məlumatlar və professional inkişaf imkanları.</p>
+                            <a href="https://teacher.sim.edu.az" class="btn btn-primary align-self-end">
                                 <i class="fas fa-arrow-right me-2"></i>Daxil Ol
                             </a>
                         </div>
@@ -138,12 +138,12 @@
                 </div>
                 <!-- Məktəbli Bölməsi -->
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 position-relative">
                         <img src="photos/11.jpg" class="card-img-top" alt="Məktəbli">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h2 class="card-title font-heading">Məktəbli</h2>
-                            <p class="card-text">Şagirdlər üçün öyrənmə resursları və faydalı məlumatlar.</p>
-                            <a href="https://student.sim.edu.az" class="btn btn-primary">
+                            <p class="card-text flex-grow-1">Şagirdlər üçün öyrənmə resursları və faydalı məlumatlar.</p>
+                            <a href="https://student.sim.edu.az" class="btn btn-primary align-self-end">
                                 <i class="fas fa-arrow-right me-2"></i>Daxil Ol
                             </a>
                         </div>
@@ -170,19 +170,11 @@
                             <h5 class="card-title" style="font-weight: bold; color: #FF0000;">Müavinlər üçün qeydiyyat formu</h5>
                             <p class="card-text">Şəki-Zaqatala RTİ-nin tabeliyində fəaliyyət göstərən ümumi təhsil məktəblərində direktor müavini,
                             məktəbdənkənar və sinifdənxaric tərbiyə işi üzrə təşkilatçı vakansiyaları üçün namizədlərin qeydiyyatı forması</p>
-                            <a href="https://forms.office.com/r/LEfYNhhPg9" class="btn btn-primary">Qeydiyyat</a>
+                            <a href="https://forms.office.com/r/LEfYNhhPg9" target="_blank" class="btn btn-primary">Qeydiyyat</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Müəllimlərin İxtisasartırma Kursu</h5>
-                            <p class="card-text">Növbəti ay ərzində müəllimlər üçün yeni ixtisasartırma kursları keçiriləcək.</p>
-                            <a href="#" class="btn btn-primary">Ətraflı</a>
-                        </div>
-                    </div>
-                </div>
+                <!-- İkinci static card yoxdur artıq -->
                 <!-- Xəbər/Elan kartları burada olacaq -->
                 <!-- JavaScript ilə dinamik olaraq doldurulacaq -->
             </div>
@@ -337,7 +329,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     
-    <!-- Custom JS -->
+    <!-- News Service -->
+    <script src="js/newsService.js"></script>
+    
+    <!-- Modular JavaScript -->
+    <script src="js/animationModule.js"></script>
+    <script src="js/themeModule.js"></script>
+    <script src="js/navigationModule.js"></script>
+    <script src="js/formModule.js"></script>
+    <script src="js/newsModule.js"></script>
+    
+    <!-- Main Application -->
     <script src="script.js"></script>
 </body>
 </html>
